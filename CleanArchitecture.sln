@@ -23,13 +23,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.Domain.Te
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.Application.Tests", "test\CleanArchitecture.Application.Tests\CleanArchitecture.Application.Tests.csproj", "{B20F7C1B-C090-490A-B025-C2CAE64CE959}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{6552B82A-E0E4-4D33-957F-ED3A2548BAAA}"
+	ProjectSection(SolutionItems) = preProject
+		API.md = API.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{A1FDEF77-9662-4FEE-BB21-36BFEEACDF5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -64,6 +66,9 @@ Global
 		{B20F7C1B-C090-490A-B025-C2CAE64CE959}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B20F7C1B-C090-490A-B025-C2CAE64CE959}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B20F7C1B-C090-490A-B025-C2CAE64CE959}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{A1FDEF77-9662-4FEE-BB21-36BFEEACDF5E} = {65586CBA-1880-484B-8214-06497557E79C}
