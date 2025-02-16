@@ -1,6 +1,8 @@
 @CleanArchitecture.Api_HostAddress = http://localhost:5026
-
+@HostAddress = http://localhost:44367
 GET {{CleanArchitecture.Api_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###
+GET {{HostAddress}}/api/Dinners
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1NTdmYTI3MS0xMDg0LTQyNjQtODcxNi0wZmRkNzYzNzAyZDUiLCJnaXZlbl9uYW1lIjoic3RyaW5nIiwiZmFtaWx5X25hbWUiOiJzdHJpbmciLCJqdGkiOiI3MzY3ODgxZS0zY2FhLTRhNDctYTI3NS0yNjgzMmNlNWFjNjkiLCJleHAiOjE3Mzk3MjIzNTIsImlzcyI6IkNsZWFuQXJjaGl0ZWN0dXJlQWxpSmFmYXJpeGNzIiwiYXVkIjoiQ2xlYW5BcmNoaXRlY3R1cmVBbGlKYWZhcml4Y3NBdWRpZW5jZSJ9.PcSzMEDPWIIbqlGZA6FvhLedSqSW9NeJdc3JJlIowT8

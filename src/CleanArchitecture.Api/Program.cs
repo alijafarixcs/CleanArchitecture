@@ -8,7 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
     builder.Services
         .AddApplication()
         .AddInfrastructure(builder.Configuration);
-        
+
     builder.Services.AddOpenApi();
     builder.Services.AddControllers();
 }
@@ -21,10 +21,12 @@ var app = builder.Build();
         app.UseSwaggerUi(options =>
         {
             options.DocumentPath = "openapi/v1.json";
+            options.Path = "/swagger";
         });
     }
 
     app.UseAuthorization();
+    app.UseAuthentication();
     app.MapControllers();
     app.UseHttpsRedirection();
     app.Run();
