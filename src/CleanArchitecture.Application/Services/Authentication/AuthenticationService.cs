@@ -36,10 +36,12 @@ public class MockAuthenticationService : IAuthenticationService
         var id = Guid.NewGuid();
         var response = new AuthenticationResult(
              id,
-            email,
+             "mock_token",
+           
             null,
             null,
-            "mock_token");
+             email
+            );
         return Task.FromResult(response);
     }
 }
